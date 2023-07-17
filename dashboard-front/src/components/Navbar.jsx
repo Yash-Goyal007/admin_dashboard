@@ -58,7 +58,7 @@ const Navbar = props => {
                             </Box>
                             <ArrowDropDownOutlined sx={{ color: theme.palette.secondary[300], fontSize: '25px' }} />
                         </Button>
-                        <Menu anchorEl={anchorEl} open={isOpen} onClone={handleClose} anchorOrigin={{vertical: "bottom",horizontal: "center"}}>
+                        <Menu anchorEl={anchorEl} open={isOpen} onClose={handleClose} anchorOrigin={{vertical: "bottom",horizontal: "center"}}>
                             <MenuItem onClick={handleClose} >Log Out</MenuItem>
                         </Menu>
                     </FlexBetween>
