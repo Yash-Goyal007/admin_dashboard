@@ -1,6 +1,5 @@
 import { Box, useTheme } from '@mui/material';
 import Header from 'components/Header';
-import OverviewChart from 'components/OverviewChart';
 import React, { useMemo, useState } from 'react';
 import DatePicker from 'react-datepicker';
 import { useGetSalesQuery } from 'state/api';
