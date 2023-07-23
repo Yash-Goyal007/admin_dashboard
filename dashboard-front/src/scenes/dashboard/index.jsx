@@ -65,7 +65,7 @@ const Dashboard = props => {
                 "& > div": { gridColumn: isNonMediumScreens ? undefined : "span 12" }
             }} >
                 <StatBox title="Total Customers" value={data && data.totalCustomers} increase="+14%" description="Since last month" icon={<Email sx={{ color: theme.palette.secondary[300], fontSize: "26px" }} />} />
-                <StatBox title="Sales Today" value={data && data.totalCustomers} increase="+21%" description="Since last month" icon={<PointOfSale sx={{ color: theme.palette.secondary[300], fontSize: "26px" }} />} />
+                <StatBox title="Sales Today" value={data && data.todayStats.totalSales} increase="+21%" description="Since last month" icon={<PointOfSale sx={{ color: theme.palette.secondary[300], fontSize: "26px" }} />} />
                 <Box gridColumn="span 8" gridRow="span 2" backgroundColor={theme.palette.background.alt} p='1rem' borderRadius="0.55rem" >
                     <OverviewChart view="sales" isDashboard={true} />
                 </Box>
